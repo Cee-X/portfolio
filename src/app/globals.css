@@ -2,32 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+
+html.light {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+  --link-color: #007bff;
+  --subHeading-color: #007bff;
+  --highlight-color: #000000;
+  --text-color:#696969;
+  
 }
+
+html.dark {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 24, 28, 39;
+  --subHeading-color: #007bff;
+  --link-color: #007bff;
+  --highlight-color:#fff ;
+  --text-color: #C0C0C0;
+
+}
+
+
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-rgb));
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+a {
+  color: var(--link-color);
+}
+
+h1{
+  color: var(--highlight-color);
+}
+h2, h3, h4, h5, h6 {
+  color: var(--subHeading-color);
+}
+span {
+  color: var(--highlight-color);
+  font-weight: 500;
+}
+p {
+  color: var(--text-color);
 }
