@@ -110,7 +110,6 @@ export default function Skill() {
                         </div>
                     ))}
                 </div>
-
                 <div className="flex flex-col gap-2 md:text-md sm:text-sm">
                     <h3 className="md:text-base lg:text-lg text-sm font-semibold mb-2">Designs</h3>
                     {designs.map((design, index) => (
