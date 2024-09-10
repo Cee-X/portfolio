@@ -33,7 +33,7 @@ export default function ContactSection() {
               Instagram
           </a>
           <a 
-          href="https://www.linkedin.com/in/kyaw-thet-htwe-4b0b5b1b1/"
+          href="https://www.linkedin.com/in/kyaw-thet-htwe-856b59201/"
           target="_blank"
           className="group w-fit md:text-base sm:text-sm text-xs">
             LinkedIn
